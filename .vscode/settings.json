@@ -1,0 +1,9 @@
+{
+  "python.linting.ignorePatterns": ["sandbox"],
+  "python.linting.pycodestyleArgs": ["--ignore=E501"],
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+}
