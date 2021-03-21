@@ -26,7 +26,7 @@ def vhash(input_file_path: str, target_dir_path: str):
 
                 get_hash = getattr(hashlib, hash_type)
                 actual_hash = get_hash(read_bytes(target_path)).hexdigest()
-                if actual_hash == prev_hash:
+                if actual_hash.upper() == prev_hash.upper():
                     print(target, " OK")
                 else:
                     print(target, " FAIL")
